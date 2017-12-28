@@ -20,5 +20,5 @@ function signIn(){
   var credential = error.credential;
   // ...
   });
-}
+
 }
