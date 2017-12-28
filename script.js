@@ -22,3 +22,11 @@ function signIn(){
   });
 }
 
+function signOut(){
+  firebase.auth().signOut().then(function() {
+    console.log('saiuuuuu');
+  }).catch(function(error) {
+    // An error happened.
+  });
+}
+
