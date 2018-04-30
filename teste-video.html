@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<script src="js/aframe.min.js"></script>
+<!-- include aframe-ar.js -->
+<script src="js/aframe-ar.js"></script>
+
+<style type="text/css">
+	
+#arjsDebugUIContainer 
+{
+   display: none; !important;
+}
+	
+.a-enter-vr-button
+{
+   display: none; !important;		
+}
+</style>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+
+
+<a-scene>
+  <a-assets>
+    <video id="penguin-sledding" autoplay loop="true" src="assets/chandon.mp4"></video>
+  </a-assets>
+
+  <!-- Using the asset management system. -->
+  <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
+
+  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+  <a-video src="assets/chandon.mp4"></a-video>
+</a-scene>
+	
+	
+	
+	
+</body>
+</html>
