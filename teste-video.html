@@ -19,16 +19,19 @@
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
 
 
-<a-scene>
-  <a-assets>
-    <video id="penguin-sledding" autoplay loop="true" src="assets/chandon.mp4"></video>
-  </a-assets>
+<a-scene embedded arjs="sourceType:webcam;"> 
+	
+	
+	<a-assets> 
+		<video id="video" autoplay loop="true" src="assets/chandon.mp4"></video>
+ 	</a-assets> 
+	
+	<a-video src="#video" width="1.8" height="1" position="0 0 0" rotation="270 0 0"></a-video>
+	
+	<a-marker-camera preset='custom' type='pattern' url='assets/big-m.patt'></a-marker-camera> 
+	
+	<a-entity camera></a-entity> 
 
-  <!-- Using the asset management system. -->
-  <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
-
-  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
-  <a-video src="assets/chandon.mp4"></a-video>
 </a-scene>
 	
 	
