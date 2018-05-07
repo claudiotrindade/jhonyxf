@@ -2,6 +2,7 @@
 <script src="js/aframe.min.js"></script>
 <!-- include aframe-ar.js -->
 <script src="js/aframe-ar.js"></script>
+<script src="https://unpkg.com/aframe-physics-system@1.4.0/dist/aframe-physics-system.min.js"></script>
 
 <style type="text/css">
 	
@@ -33,7 +34,9 @@
 	 <a-marker-camera preset='custom' type='pattern' url='assets/big-m.patt'></a-marker-camera> 
 
 	<a-entity camera></a-entity> 
-	<a-sky color="#ECECEC"></a-sky>
+	<a-box position="-1 4 -3" rotation="0 45 0" color="#4CC3D9" dynamic-body></a-box>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" static-body></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
 
 </a-scene>
 	
