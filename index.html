@@ -21,7 +21,7 @@
 
 <!-- <a-scene embedded arjs='sourceType: webcam;'> -->
 	<a-scene class="fullscreen" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
-	<a-entity-camera preset='custom' type='pattern' url='assets/big-m.patt'>
+	<a-marker-camera preset='custom' type='pattern' url='assets/big-m.patt'>
 		<!-- <a-box position="0 0 0" width="1" height="1" depth="0" material="shader:gif;src:url(assets/chandon-feed.gif);" transparent="true" gif="" rotation="" scale="" visible="" geometry=""></a-box> -->
 		<a-image position="0 0.2 0" rotation="270 0 0" height="1" width="1"  src="assets/chandon-feed.gif"></a-image>
 		
@@ -31,10 +31,11 @@
 		<!-- <a-image position="0 0 0" rotation="90 180 0" height="1" width="1"  src="https://raw.githubusercontent.com/mattGraphics/randomfiles/master/red-dot.png"></a-image> -->
 		
 		<a-image position="0 0.4 0" rotation="270 0 0" height="1" width="1"  src="assets/hello-you-text.png"></a-image>
-		<a-entity text="value:School of Net;color:#000000;align:center;width:21;negate:false;side:double" position="0 0.4362056844612432 -2.222486479677261"
+		<a-entity text="value:efacil.com.br;color:#000000;align:center;width:21;negate:false;side:double" position="0 0.4362056844612432 -2.222486479677261"
                     scale="0.9679300973677261 0.9600322685525657 0.9600322685525657"></a-entity>
 		
-		  </a-entity-camera> 
+		  </a-marker-camera> 
+		  <a-entity camera></a-entity>
 		  
 	</a-scene>
 	
